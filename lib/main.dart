@@ -9,7 +9,7 @@ const Color primaryColor = Colors.orange;
 const TargetPlatform platform = TargetPlatform.android;
 
 void main() {
-  runApp(Sunflower());
+  runApp(const Sunflower());
 }
 
 class SunflowerPainter extends CustomPainter {
@@ -56,6 +56,8 @@ class SunflowerPainter extends CustomPainter {
 }
 
 class Sunflower extends StatefulWidget {
+  const Sunflower({Key? key}) : super(key: key);
+
   @override
   State<StatefulWidget> createState() {
     return _SunflowerState();
