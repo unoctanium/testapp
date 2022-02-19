@@ -10,6 +10,7 @@ const TargetPlatform platform = TargetPlatform.android;
 
 void main() {
   runApp(const Sunflower());
+  
 }
 
 class SunflowerPainter extends CustomPainter {
